@@ -1,6 +1,6 @@
 
 # loading the new questionare dataset in R 
-df <- read.csv("D:/masters- digital innovation/business data analytics/final assignment (project)/Section 1 - data/Data1(1) (1).csv", header = T)
+df <- read.csv("D:/digital innovation/data/Data1(1) (1).csv", header = T)
 # fit the PCA model for the entire dataset
 library(psych)
 library(paran)
@@ -38,7 +38,7 @@ fit
 RC1 <- fit$scores[,1]
 RC2 <- fit$scores[,2]
 #putting the components into the dataset
-df <- read.csv("D:/masters- digital innovation/business data analytics/final assignment (project)/Section 1 - data/Data1(1) (1).csv", header = T)
+df <- read.csv("D:/digital innovation/data/Data1(1) (1).csv", header = T)
 df$RC1 <- RC1
 df$RC2 <- RC2
 
